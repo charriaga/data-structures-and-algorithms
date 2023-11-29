@@ -39,8 +39,10 @@ Write a function named containsAnd that, given an array of strings as input, use
 For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 ------------------------------------------------------------------------------------------------ */
 
+// consulted chatGPT
 const containsAnd = (arr) => {
-  // Solution code here...
+  const newArr = arr.filter (val => val.includes('and'));
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -52,7 +54,10 @@ For example, oddValues([1,2,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const oddValues = (arr) => {
-  // Solution code here...
+  const newArr = arr.filter(val => {
+    return (val % 2);
+  });
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
